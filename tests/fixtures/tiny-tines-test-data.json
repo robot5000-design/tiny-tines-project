@@ -1,0 +1,32 @@
+{
+	"actions": [
+		{
+			"type": "HTTPRequestAction",
+			"name": "datetime",
+			"options": {
+				"url": "http://worldtimeapi.org/api/ip"
+			}
+		},
+		{
+			"type": "PrintAction",
+			"name": "print_week",
+			"options": {
+				"message": "Current week number : {{datetime.week_number}}"
+			}
+		},
+		{
+			"type": "HTTPRequestAction",
+			"name": "factoid",
+			"options": {
+				"url": "http://numbersapi.com/{{datetime.week_number}}/date?json"
+			}
+		},
+		{
+			"type": "PrintAction",
+			"name": "print_type",
+			"options": {
+				"message": "Result type: {{factoid.type}}"
+			}
+		}
+	]
+}

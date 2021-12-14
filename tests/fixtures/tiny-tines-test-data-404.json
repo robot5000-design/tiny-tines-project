@@ -1,0 +1,11 @@
+{
+	"actions": [
+		{
+			"type": "HTTPRequestAction",
+			"name": "datetime",
+			"options": {
+				"url": "https://httpstat.us/404"
+			}
+		}
+	]
+}

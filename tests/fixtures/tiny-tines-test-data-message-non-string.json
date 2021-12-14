@@ -1,0 +1,11 @@
+{
+	"actions": [
+		{
+			"type": "PrintAction",
+			"name": "datetime",
+			"options": {
+				"message": [1]
+			}
+		}
+	]
+}
